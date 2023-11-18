@@ -1,0 +1,156 @@
+{
+    "type": "block_actions",
+    "user": {
+        "id": "U05H8AK3T7W",
+        "username": "dae",
+        "name": "dae",
+        "team_id": "T05H5PH3U4B"
+    },
+    "api_app_id": "A05KCSEG63W",
+    "token": "I6lwcLzFnloi1CRyU5epmGPz",
+    "container": {
+        "type": "message_attachment",
+        "message_ts": "1696879777.227629",
+        "attachment_id": 1,
+        "channel_id": "C05H2V0ANSZ",
+        "is_ephemeral": false,
+        "is_app_unfurl": false,
+        "thread_ts": "1696879776.560759"
+    },
+    "trigger_id": "6010016023989.5583799130147.f6c5f87750da7a8a235359074ed0c7fd",
+    "team": {
+        "id": "T05H5PH3U4B",
+        "domain": "dogfoodtestin-an22161"
+    },
+    "enterprise": null,
+    "is_enterprise_install": false,
+    "channel": {
+        "id": "C05H2V0ANSZ",
+        "name": "general"
+    },
+    "message": {
+        "bot_id": "B05KABL9T3M",
+        "type": "message",
+        "text": "",
+        "user": "U05K7GSDQ69",
+        "ts": "1696879777.227629",
+        "app_id": "A05KCSEG63W",
+        "team": "T05H5PH3U4B",
+        "attachments": [
+            {
+                "id": 1,
+                "blocks": [
+                    {
+                        "type": "section",
+                        "block_id": "rztJi",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "Hi, I'm here to schedule a Zoom meeting with EventCAT. Please pick a date and time for the meeting as well as the meeting host. Thank you so much.",
+                            "emoji": true
+                        }
+                    },
+                    {
+                        "type": "divider",
+                        "block_id": "Sgo5N"
+                    },
+                    {
+                        "type": "input",
+                        "block_id": "NMvaK",
+                        "label": {
+                            "type": "plain_text",
+                            "text": "Pick a date & time for a Zoom meeting",
+                            "emoji": true
+                        },
+                        "optional": false,
+                        "dispatch_action": false,
+                        "element": {
+                            "type": "datetimepicker",
+                            "action_id": "datetime_input",
+                            "initial_date_time": 1628633820
+                        }
+                    },
+                    {
+                        "type": "divider",
+                        "block_id": "ULOVf"
+                    },
+                    {
+                        "type": "input",
+                        "block_id": "azvjH",
+                        "label": {
+                            "type": "plain_text",
+                            "text": "Select the meeting host",
+                            "emoji": true
+                        },
+                        "optional": false,
+                        "dispatch_action": false,
+                        "element": {
+                            "type": "multi_users_select",
+                            "action_id": "meetinghost_input",
+                            "placeholder": {
+                                "type": "plain_text",
+                                "text": "Select users",
+                                "emoji": true
+                            }
+                        }
+                    },
+                    {
+                        "type": "divider",
+                        "block_id": "1/1sr"
+                    },
+                    {
+                        "type": "actions",
+                        "block_id": "T7Q8W",
+                        "elements": [
+                            {
+                                "type": "button",
+                                "action_id": "actionId-0",
+                                "text": {
+                                    "type": "plain_text",
+                                    "text": "Complete",
+                                    "emoji": true
+                                },
+                                "value": "click_me_123"
+                            }
+                        ]
+                    }
+                ],
+                "fallback": "[no preview available]"
+            }
+        ],
+        "thread_ts": "1696879776.560759",
+        "parent_user_id": "U05H8AK3T7W"
+    },
+    "state": {
+        "values": {
+            "NMvaK": {
+                "datetime_input": {
+                    "type": "datetimepicker",
+                    "selected_date_time": 1714572000
+                }
+            },
+            "azvjH": {
+                "meetinghost_input": {
+                    "type": "multi_users_select",
+                    "selected_users": [
+                        "U05H8AK3T7W"
+                    ]
+                }
+            }
+        }
+    },
+    "response_url": "https://hooks.slack.com/actions/T05H5PH3U4B/6006296458822/Mm5GkJTdptAG8hL0RFt4zTVG",
+    "actions": [
+        {
+            "action_id": "actionId-0",
+            "block_id": "T7Q8W",
+            "text": {
+                "type": "plain_text",
+                "text": "Complete",
+                "emoji": true
+            },
+            "value": "click_me_123",
+            "type": "button",
+            "action_ts": "1696879799.975896"
+        }
+    ]
+}
